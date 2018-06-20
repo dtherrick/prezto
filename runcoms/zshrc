@@ -11,3 +11,30 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+export CYBER_VENV=/home/daherr/Code/git/virt_sascyber/bin/activate
+export CYBER_JOBEXEC=DIP
+export CYBER_TASK=123
+export CYBER_STATUS_FILE_DIRECTORY=/tmp
+export CYBER_ARGS=/home/daherr/Code/git/Analysis.AnalyticsConfig/test/nf.dstips.IntDstIps.json
+export CYBER_ROOT=/home/daherr/tmp/sascyber
+export CYBER_DEV_STATUS=DEBUG
+export CYBER_DEFAULT_LOGGING=true
+export CYBER_LOG=/home/daherr/Code/git/Analysis.AnalyticsConfig/log/logformat.json
+export CAS_CLIENT_SSL_CA_LIST=$HOME/cascert.pem
+
+alias sas9="/home/sas/SASHome/SASFoundation/9.4/sas"
+alias la="ls -lah"
+alias ipy="ipython --pprint --no-simple-prompt"
+alias jpnb="jupyter notebook"
+alias py="python3.6"
+alias pinstall="pip3.6 install"
+alias vsascy="source /home/daherr/Code/virtual_envs/virt_sascyber/bin/activate"
+alias mux="tmuxinator"
+
+# binding keys
+bindkey -v # move to vi-mode
+bindkey -M viins 'jk' vi-cmd-mode
+bindkey '^R' history-incremental-search-backward
